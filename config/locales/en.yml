@@ -1,33 +1,49 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      full_title:
+        title: "Ruby on Rails Tutorial Sample App"
+    header:
+      home:
+        title: "Welcome to the Sample App"
+        name1: "Sample App"
+        name: "Home"
+        login: "Login"
+      help:
+        title: "Help"
+    footer:
+      about:
+        title: "About"
+      contact:
+        title: "Contact"
+      news:
+        title: "News"
+      author: "Ruby on Rails Tutorial"
+      company: "Michael Hartl"
+  static_pages:
+    home:
+      title: "Welcome to the Sample App"
+      name: "Home"
+      login: "Login"
+      desc: "This is the home page for the"
+      desc1: "Ruby on Rails Tutorial"
+      desc2: "sample application."
+      button: "Sign up now!"
+    about:
+      title: "About"
+      desc: "About the Ruby on Rails Tutorial about the sample app at the"
+      link: "about page"
+    contact:
+      title: "Contact"
+      desc: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      link: "Contact page"
+    help:
+      title: "Help"
+      desc: "Help the Ruby on Rails Tutorial about the sample app at the"
+      link: "Help page"
+    news:
+      title: "News"
+  users:
+    new:
+      title: "Users"
+      desc: "Find me in app/views/users/new.html.erb"
